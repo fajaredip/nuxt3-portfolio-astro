@@ -56,18 +56,18 @@
 		</header>
 		<section
 			id="home"
-			class="w-full min-h-screen bg-[url('/img/banner-bg.png')] bg-cover text-white"
+			class="w-full min-h-screen bg-[url('/img/banner-bg.png')] bg-cover text-white md:pb-64"
 		>
 			<div class="container min-h-svh mx-auto">
 				<div
-					class="h-[calc(100vh-64px)] flex items-center justify-center lg:justify-between flex-col lg:flex-row-reverse gap-8 px-8 py-4"
+					class="h-svh flex items-center justify-center lg:justify-between flex-col lg:flex-row-reverse gap-8 px-8 pt-10 pb-4"
 				>
 					<img
-						class="lg:size-96 xl:size-full"
+						class="md:size-3/5 lg:size-96 xl:size-3/5"
 						src="public/img/header-img.svg"
 						alt=""
 					/>
-					<div class="hero-text text-center lg:text-left">
+					<div class="hero-text text-center lg:text-left lg:w-1/2">
 						<p class="text-base lg:text-2xl mb-5">Welcome to the Space</p>
 						<h1 class="text-4xl lg:text-8xl mb-5">
 							Hi, I'm an <span class="font-semibold">Astronaut</span>
@@ -90,33 +90,34 @@
 				</div>
 			</div>
 		</section>
-		<section
-			id="skills"
-			class="w-full bg-zinc-800 text-center px-8 py-10 text-slate-400"
-		>
-			<h1 class="text-white text-4xl font-semibold mb-5">Skills</h1>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-			<p>
-				Possimus temporibus, similique natus optio nihil consequatur ipsam nisi
-				repellat hic, praesentium ducimus adipisci suscipit sequi odit. Libero
-				debitis quod illum ex.
-			</p>
-			<div class="flex items-center justify-center gap-5 mt-10">
-				<div>
-					<img class="mb-3" src="public/img/meter1.svg" alt="" />
-					Skill 1
-				</div>
-				<div>
-					<img class="mb-3" src="public/img/meter2.svg" alt="" />
-					Skill 2
-				</div>
-				<div>
-					<img class="mb-3" src="public/img/meter3.svg" alt="" />
-					Skill 3
+		<section id="skills" class="md:relative">
+			<div
+				class="w-full bg-zinc-800 text-center px-8 py-10 text-slate-400 md:absolute md:-bottom-56 md:left-1/2 md:w-4/5 md:rounded-xl md:transform md:-translate-x-1/2"
+			>
+				<h1 class="text-white text-4xl font-semibold mb-5">Skills</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<p>
+					Possimus temporibus, similique natus optio nihil consequatur ipsam
+					nisi repellat hic, praesentium ducimus adipisci suscipit sequi odit.
+					Libero debitis quod illum ex.
+				</p>
+				<div class="flex items-center justify-center gap-5 mt-10">
+					<div>
+						<img class="mb-3" src="public/img/meter1.svg" alt="" />
+						Skill 1
+					</div>
+					<div>
+						<img class="mb-3" src="public/img/meter2.svg" alt="" />
+						Skill 2
+					</div>
+					<div>
+						<img class="mb-3" src="public/img/meter3.svg" alt="" />
+						Skill 3
+					</div>
 				</div>
 			</div>
 		</section>
-		<section id="projects" class="w-full bg-black">
+		<section id="projects" class="w-full bg-black md:pt-60">
 			<div
 				class="container w-full mx-auto text-center px-8 py-10 text-slate-400"
 			>
