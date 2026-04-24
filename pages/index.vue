@@ -21,20 +21,20 @@
 						/>
 					</div>
 					<div class="hidden space-x-10 lg:flex lg:ml-10">
-						<a href="#home" class="hover:text-indigo-600">Home</a>
-						<a href="#skills" class="hover:text-indigo-600">Skills</a>
-						<a href="#projects" class="hover:text-indigo-600">Projects</a>
+						<a href="#home" class="transition-all duration-300 hover:text-indigo-400 hover:scale-105">Home</a>
+						<a href="#skills" class="transition-all duration-300 hover:text-indigo-400 hover:scale-105">Skills</a>
+						<a href="#projects" class="transition-all duration-300 hover:text-indigo-400 hover:scale-105">Projects</a>
 					</div>
 					<button
 						@click="isOpen = !isOpen"
-						class="px-3 py-1 border-2 border-white rounded-md lg:hidden"
+						class="px-3 py-1 border-2 border-white rounded-md lg:hidden transition-all duration-300 hover:bg-indigo-600 hover:border-indigo-600 hover:scale-105"
 					>
 						<i class="fa-solid fa-bars"></i>
 					</button>
 				</nav>
 				<div class="hidden header-right lg:block">
 					<button
-						class="px-4 py-2 border-2 border-white rounded-md hover:bg-white hover:text-neutral-800 text-nowrap"
+						class="px-4 py-2 border-2 border-white rounded-md hover:bg-white hover:text-neutral-800 text-nowrap transition-all duration-300 hover:scale-105"
 					>
 						Let's Connect
 					</button>
@@ -44,11 +44,11 @@
 				v-if="isOpen"
 				class="absolute left-0 flex flex-col w-full gap-2 p-5 space-y-2 text-center lg:hidden bg-neutral-800 top-16"
 			>
-				<a href="#home" class="hover:text-indigo-600">Home</a>
-				<a href="#skills" class="hover:text-indigo-600">Skills</a>
-				<a href="#projects" class="hover:text-indigo-600">Projects</a>
+				<a href="#home" class="transition-all duration-300 hover:text-indigo-400 hover:scale-105">Home</a>
+				<a href="#skills" class="transition-all duration-300 hover:text-indigo-400 hover:scale-105">Skills</a>
+				<a href="#projects" class="transition-all duration-300 hover:text-indigo-400 hover:scale-105">Projects</a>
 				<button
-					class="px-4 py-2 border-2 border-white rounded-md hover:bg-white hover:text-neutral-800 text-nowrap"
+					class="px-4 py-2 border-2 border-white rounded-md hover:bg-white hover:text-neutral-800 text-nowrap transition-all duration-300 hover:scale-105"
 				>
 					Let's Connect
 				</button>
@@ -63,23 +63,23 @@
 					class="flex flex-col items-center justify-center gap-8 px-8 pt-10 pb-4 h-svh lg:justify-between lg:flex-row-reverse"
 				>
 					<img
-						class="md:size-3/5 lg:size-96 xl:size-3/5"
+						class="md:size-3/5 lg:size-96 xl:size-3/5 animate-float"
 						src="public/img/header-img.svg"
 						alt=""
 					/>
 					<div class="text-center hero-text lg:text-left lg:w-1/2 xl:w-4/6">
 						<p class="mb-5 text-base lg:text-2xl">Welcome to the Space</p>
 						<h1 class="mb-5 text-6xl xl:text-8xl">
-							Hi, I'm an <span class="font-semibold">Astronaut</span>
+							Hi, I'm an <span class="font-semibold text-indigo-400">Astronaut</span>
 						</h1>
 						<p class="mb-3 text-base lg:text-2xl">
 							I'm a passionate
-							<span class="font-semibold">Frontend Developer</span> who loves
+							<span class="font-semibold text-indigo-300">Frontend Developer</span> who loves
 							Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						</p>
 						<a
 							href="#footer"
-							class="block px-4 py-2 mx-auto my-4 border-2 border-white rounded-md hover:bg-white hover:text-neutral-800 w-fit lg:mx-0"
+							class="block px-4 py-2 mx-auto my-4 border-2 border-white rounded-md hover:bg-white hover:text-neutral-800 w-fit lg:mx-0 transition-all duration-300 hover:scale-105"
 						>
 							Let's Connect <i class="ml-3 fa-regular fa-circle-down"></i>
 						</a>
@@ -91,7 +91,7 @@
 			<div
 				class="w-full px-8 py-10 text-center bg-zinc-800 text-slate-400 lg:absolute lg:-bottom-56 lg:left-1/2 lg:w-4/5 lg:rounded-3xl lg:transform lg:-translate-x-1/2"
 			>
-				<h1 class="mb-5 text-4xl font-semibold text-white">Skills</h1>
+				<h1 class="mb-5 text-4xl font-semibold text-indigo-200">Skills</h1>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 				<p>
 					Possimus temporibus, similique natus optio nihil consequatur ipsam
@@ -99,15 +99,15 @@
 					Libero debitis quod illum ex.
 				</p>
 				<div class="flex items-center justify-center gap-5 mt-10 md:gap-20">
-					<div>
+					<div class="transition-transform duration-300 hover:scale-105">
 						<img class="mb-3 md:size-40" src="public/img/meter1.svg" alt="" />
 						Skill 1
 					</div>
-					<div>
+					<div class="transition-transform duration-300 hover:scale-105">
 						<img class="mb-3 md:size-40" src="public/img/meter2.svg" alt="" />
 						Skill 2
 					</div>
-					<div>
+					<div class="transition-transform duration-300 hover:scale-105">
 						<img class="mb-3 md:size-40" src="public/img/meter3.svg" alt="" />
 						Skill 3
 					</div>
@@ -118,7 +118,7 @@
 			<div
 				class="container w-full px-8 py-10 mx-auto text-center text-slate-400"
 			>
-				<h1 class="mb-5 text-4xl font-semibold text-white">Projects</h1>
+				<h1 class="mb-5 text-4xl font-semibold text-indigo-200">Projects</h1>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
 					temporibus, similique natus optio nihil consequatur ipsam nisi
@@ -128,13 +128,13 @@
 				<div
 					class="flex flex-col items-center justify-center gap-5 mt-10 md:flex-row"
 				>
-					<div class="w-full rounded-lg lg:w-1/3">
+					<div class="w-full rounded-lg lg:w-1/3 transition-transform duration-300 hover:scale-105">
 						<img src="public/img/project-img1.png" alt="" />
 					</div>
-					<div class="w-full rounded-lg lg:w-1/3">
+					<div class="w-full rounded-lg lg:w-1/3 transition-transform duration-300 hover:scale-105">
 						<img src="public/img/project-img2.png" alt="" />
 					</div>
-					<div class="w-full rounded-lg lg:w-1/3">
+					<div class="w-full rounded-lg lg:w-1/3 transition-transform duration-300 hover:scale-105">
 						<img src="public/img/project-img3.png" alt="" />
 					</div>
 				</div>
@@ -153,34 +153,34 @@
 					alt=""
 				/>
 				<div class="flex flex-col items-start justify-center w-full">
-					<h1 class="mb-5 text-4xl font-semibold text-white">Get In Touch</h1>
+					<h1 class="mb-5 text-4xl font-semibold text-indigo-200">Get In Touch</h1>
 					<div class="flex flex-col items-end justify-center w-full gap-1">
 						<div class="flex flex-col items-center w-full gap-1 md:flex-row">
 							<input
-								class="w-full p-3 text-black bg-white border border-gray-600 rounded-lg md:w-1/2 bg-opacity-30 placeholder-zinc-400"
+								class="w-full p-3 text-black bg-white border border-gray-600 rounded-lg md:w-1/2 bg-opacity-30 placeholder-zinc-400 focus:ring-2 focus:ring-indigo-500 transition-all duration-300"
 								type="text"
 								placeholder="First Name"
 							/>
 							<input
-								class="w-full p-3 text-black bg-white border border-gray-600 rounded-lg md:w-1/2 bg-opacity-30 placeholder-zinc-400"
+								class="w-full p-3 text-black bg-white border border-gray-600 rounded-lg md:w-1/2 bg-opacity-30 placeholder-zinc-400 focus:ring-2 focus:ring-indigo-500 transition-all duration-300"
 								type="text"
 								placeholder="Last Name"
 							/>
 						</div>
 						<div class="flex flex-col items-center w-full gap-1 md:flex-row">
 							<input
-								class="w-full p-3 text-black bg-white border border-gray-600 rounded-lg md:w-1/2 bg-opacity-30 placeholder-zinc-400"
+								class="w-full p-3 text-black bg-white border border-gray-600 rounded-lg md:w-1/2 bg-opacity-30 placeholder-zinc-400 focus:ring-2 focus:ring-indigo-500 transition-all duration-300"
 								type="text"
 								placeholder="Email Address"
 							/>
 							<input
-								class="w-full p-3 text-black bg-white border border-gray-600 rounded-lg md:w-1/2 bg-opacity-30 placeholder-zinc-400"
+								class="w-full p-3 text-black bg-white border border-gray-600 rounded-lg md:w-1/2 bg-opacity-30 placeholder-zinc-400 focus:ring-2 focus:ring-indigo-500 transition-all duration-300"
 								type="text"
 								placeholder="Phone No."
 							/>
 						</div>
 						<textarea
-							class="w-full p-3 text-black bg-white border border-gray-600 rounded-lg resize-none bg-opacity-30 placeholder-zinc-400"
+							class="w-full p-3 text-black bg-white border border-gray-600 rounded-lg resize-none bg-opacity-30 placeholder-zinc-400 focus:ring-2 focus:ring-indigo-500 transition-all duration-300"
 							placeholder="Message"
 							rows="5"
 						></textarea>
@@ -204,13 +204,13 @@
 					class="w-12 h-12 md:w-20 md:h-2w-20"
 				/>
 				<div class="flex items-center justify-between gap-3 socials">
-					<button class="p-2 border-2 border-white rounded-md">
+					<button class="p-2 border-2 border-white rounded-md transition-all duration-300 hover:bg-indigo-600 hover:scale-105">
 						<img src="public/img/nav-icon1.svg" alt="facebook" />
 					</button>
-					<button class="p-2 border-2 border-white rounded-md">
+					<button class="p-2 border-2 border-white rounded-md transition-all duration-300 hover:bg-indigo-600 hover:scale-105">
 						<img src="public/img/nav-icon2.svg" alt="twitter" />
 					</button>
-					<button class="p-2 border-2 border-white rounded-md">
+					<button class="p-2 border-2 border-white rounded-md transition-all duration-300 hover:bg-indigo-600 hover:scale-105">
 						<img src="public/img/nav-icon3.svg" alt="instagram" />
 					</button>
 				</div>
@@ -219,4 +219,16 @@
 	</div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.animate-float {
+	animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+	0%, 100% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+}
+</style>
